@@ -72,7 +72,7 @@ else
         -DLZO_INCLUDE_DIR="$(realpath ../BuildLZO/output/include)" \
         -DJPEG_LIBRARY="$(realpath ../BuildJPEG/output/lib/libturbojpeg.a)" \
         -DJPEG_INCLUDE_DIR="$(realpath ../BuildJPEG/output/include)" \
-        -DPNG_LIBRARY="$(realpath ../BuildPNG/output/lib/libpng16.a)" \
+        -DPNG_LIBRARY="$(realpath ../BuildPNG/output/lib/libpng18.a)" \
         -DPNG_PNG_INCLUDE_DIR="$(realpath ../BuildPNG/output/include)" \
         -DOPENSSL_LIBRARIES="$(realpath ../Build-OpenSSL-cURL/openssl/iOS/lib)" \
         -DOPENSSL_CRYPTO_LIBRARY="$(realpath ../Build-OpenSSL-cURL/openssl/iOS/lib/libcrypto.a)" \
@@ -126,8 +126,8 @@ if [ -z "$SIMULATOR" ]; then
     cp -r BuildJPEG/output/include/* dist/include
     cp BuildLZO/output/lib/liblzo2.a dist/lib/liblzo2.a
     cp -r BuildLZO/output/include/* dist/include
-    cp BuildPNG/output/lib/libpng16.a dist/lib/libpng16.a
-    cp BuildPNG/output/lib/libpng16.a dist/lib/libpng.a
+    cp BuildPNG/output/lib/libpng18.a dist/lib/libpng18.a
+    cp BuildPNG/output/lib/libpng18.a dist/lib/libpng.a
     cp -r BuildPNG/output/include/* dist/include
     cp BuildSASL/output/lib/libsasl2.a dist/lib/libsasl2.a
     cp -r BuildSASL/output/include/* dist/include
